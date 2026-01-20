@@ -1,0 +1,956 @@
+html {
+    scroll-behavior: smooth;
+}
+/*-- -------------------------- -->
+<---           Hero             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #hero-1618 {
+    padding: var(--sectionPadding);
+    /* 200px - 300px - leaving extra space for the navigation */
+    padding-top: clamp(12.5rem, 31.95vw, 18.75rem);
+    position: relative;
+    z-index: 1;
+  }
+  #hero-1618 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* 60px - 180px */
+    gap: clamp(3.75rem, 13vw, 11.25rem);
+  }
+  #hero-1618 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 48.75rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #hero-1618 .cs-topper {
+    /* 13px - 16px */
+    font-size: clamp(0.8125rem, 1.5vw, 1rem);
+    line-height: .05em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+    color: rgba(255,255,255,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+  }
+  #hero-1618 .cs-chevron {
+    --chevronColor: var(--primary);
+    width: 3rem;
+    height: auto;
+  }
+  #hero-1618 .cs-title {
+    /* 39px - 61px */
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 100%;
+    margin: 0 0 2.5rem 0;
+    color: rgba(255,255,255,0.9);
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+  }
+  #hero-1618 .cs-text {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 1.95vw, 1.25rem);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    /* 464px - 622px */
+    max-width: clamp(29rem, 60vw, 38.785rem);
+    margin: 0 0 2.5rem 0;
+    color: #fff;
+  }
+  #hero-1618 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    margin: 0;
+    color: #3B2A1F;
+    padding: 0 1.5rem;
+    background-color: #FFE2B8;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    border-radius: 999px
+  }
+  #hero-1618 .cs-button-solid:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width .3s;
+  }
+  #hero-1618 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #hero-1618 .cs-card-group {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* 16px - 20px */
+    gap: clamp(1rem, 2.3vw, 1.25rem);
+  }
+  #hero-1618 .cs-item {
+    width: 100%;
+    text-align: left;
+    list-style: none;
+    margin: 0;
+    /* 24px - 32px */
+    padding: clamp(1.5rem, 3vw, 2rem);
+    background-color: #fff;
+    box-shadow: 0px 12px 80px 0px rgba(26, 26, 26, 0.08);
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+    grid-column: span 12;
+    grid-row: span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+  #hero-1618 .cs-icon {
+    width: 3rem;
+    height: auto;
+    margin: 0 0 1.5rem 0;
+  }
+  #hero-1618 .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+    line-height: 1.2em;
+    font-weight: bold;
+    text-align: inherit;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+  }
+  #hero-1618 .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    max-width: 28.125rem;
+    margin: 0;
+    padding: 0;
+    color: var(--bodyTextColor);
+  }
+  #hero-1618 .cs-background {
+    width: 100%;
+    height: 55%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+  }
+  #hero-1618 .cs-background:before {
+    /* Overlay */
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #1f1410;
+    opacity: 0.6;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* prevents the cursor from interacting with it */
+    pointer-events: none;
+  }
+  #hero-1618 .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* makes the top of the image start at the top of the parent */
+    object-position: top;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #hero-1618 {
+    padding-bottom: 0;
+  }
+  #hero-1618 .cs-container {
+    align-items: flex-start;
+  }
+  #hero-1618 .cs-content {
+    text-align: left;
+    margin-left: 0;
+    align-items: flex-start;
+  }
+  #hero-1618 .cs-item {
+    grid-column: span 4;
+  }
+  #hero-1618 .cs-background {
+    height: 87%;
+  }
+  #hero-1618 .cs-background:before {
+    background: linear-gradient(90deg, #1f1410 21.41%, rgba(31, 20, 16, 0.72) 34.98%, rgba(31, 20, 16, 0) 62.53%);
+    opacity: 1;
+  }
+}
+/* Large Desktop Parallax Effect - 100px */
+@media only screen and (min-width: 100rem) {
+  #hero-1618 .cs-background {
+    background: url("images/hero-cats-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* creates the parallax effect */
+    background-attachment: fixed;
+  }
+  #hero-1618 .cs-background img {
+    display: none;
+  }
+}
+
+/*-- -------------------------- -->
+<---       Meet The Cats        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #meet-team-977 {
+        padding: var(--sectionPadding);
+        overflow: hidden;
+        background-color: #FFF7EF;
+    }
+    #meet-team-977 .cs-container {
+        width: 100%;
+        /* changes to 1280px at desktop */
+        max-width: 34.375rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #meet-team-977 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: center;
+        width: 100%;
+        max-width: 40.625rem;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: center;
+    }
+    #meet-team-977 .cs-topper {
+        font-size: var(--topperFontSize);
+        line-height: 1.2em;
+        text-transform: uppercase;
+        text-align: inherit;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 0.25rem;
+        display: none;
+    }
+    #meet-team-977 .cs-title {
+        font-size: clamp(2rem, 3vw, 2.5rem);;
+        font-weight: 800;
+        line-height: 1.2em;
+        text-align: inherit;
+        max-width: 43.75rem;
+        margin: 1.5rem 0 1.25rem 0;       
+        color: #333;
+        position: relative;
+        font-family: 'Nunito', sans-serif;
+    }
+    #meet-team-977 .cs-text {
+        font-size: var(--bodyFontSize);
+        line-height: 1.5em;
+        text-align: center;
+        width: 100%;
+        max-width: 40.625rem;
+        margin: 0.75rem 0 0;
+        color: #555;
+        padding: 0.75rem 1.5rem;
+        border-radius: 999px;
+        border:1px solid rgba(0,0,0,0.88);
+        background: rgba(255,255,255,.8);
+    }
+    #meet-team-977 .cs-card-group {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        position: relative;
+    }
+    #meet-team-977 .cs-item {
+        list-style: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        position: relative;
+        background-color: #ffffff;
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    #meet-team-977 .cs-item:hover {
+        cursor: pointer;
+        transform: translateY(-6px);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+    }
+    #meet-team-977 .cs-picture {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        overflow: hidden;
+        display: block;
+        position: relative;
+        margin: 1.5rem auto 0.75rem; 
+    }
+    #meet-team-977 .cs-picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transition: transform 0.5s ease;
+    }
+    #meet-team-977 .cs-item:hover .cs-picture img {
+        transform: scale(1.05);
+    }
+    #meet-team-977 .cs-info {
+        width: 100%;
+        max-width: none;
+        padding: 0 1.5rem 1.5rem;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: static;
+        background-color: #ffffff;
+        gap: 0.25rem;
+    }
+
+    #meet-team-977 .cs-info:before {
+        content: none;
+    }
+    #meet-team-977 .cs-name {
+        /* 20px - 25px */
+        font-size: 1.25rem;
+        line-height: 1.2em;
+        font-weight: 700;
+        margin: 0 0 0.5rem 0;
+        color: #333333;
+        font-family: 'Nunito', sans-serif;
+        display: block;
+    }
+    #meet-team-977 .cs-job {
+        font-size: 1rem;
+        line-height: 1.5em;
+        margin: 0;
+        color: #666666;
+        font-family: 'Nunito', sans-serif;
+        display: block;
+        text-align: center
+    }
+    #meet-team-977 .cs-desc {
+        font-size: 0.95rem;
+        line-height: 1.4em;
+        color: #777;
+        margin: 0 0 0.5rem 0;
+        text-align: center;
+    }
+    #meet-team-977 .cs-social-group {
+        display: none;
+    }
+    #meet-team-977 .cat-filter-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 1.5rem 0 2rem;
+}
+
+#meet-team-977 .filter-btn {
+    padding: 0.55rem 1.4rem;
+    border-radius: 999px;          
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #444;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease,
+                transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+#meet-team-977 .filter-btn:hover {
+    background: #ffe9d4;
+    color: #333;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+#meet-team-977 .filter-btn.active {
+    background: #ffcfaa;
+    color: #222;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+}
+/* Tablet - 550px */
+@media only screen and (min-width: 34.375rem) {
+    #meet-team-977 .cs-card-group {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 2rem;
+    }
+    #meet-team-977 .cs-item {
+        width: 50%;
+    }
+    #meet-team-977 .cs-picture {
+        /* remove the aspect ratio so the height can be squished */
+        aspect-ratio: initial;
+    }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #meet-team-977 .cs-container {
+        max-width: 80rem;
+    }
+    #meet-team-977 .cs-item {
+        width: calc(25% - 1.5rem);
+    }
+    #meet-team-977 .cs-item:hover .cs-info:before {
+        content: none;
+    }
+    #meet-team-977 .cs-social-group {
+        justify-content: space-between;
+    }
+    #meet-team-977 .cs-link {
+        display: none;
+    }
+    #meet-team-977 {
+   margin-bottom: 0.1rem;
+    }
+        /* Adoption Journey Section */
+    #adoption-journey-001 {
+        padding: 4.5rem 1.5rem 3.5rem;
+        background: #fffaf1;
+    }
+
+    #adoption-journey-001 .cs-container {
+        max-width: 1120px;
+        margin: 0 auto;
+    }
+
+    #adoption-journey-001 .aj-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1.25rem;
+        margin: 0 auto 2.25rem;
+        max-width: 44rem;
+        text-align: left;
+    }
+
+    #adoption-journey-001 .aj-icon-wrapper {
+        width: 52px;
+        height: 52px;
+        border-radius: 999px;
+        background: #ffeec2; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        flex-shrink: 0;
+    }
+
+    #adoption-journey-001 .aj-icon {
+        width: 30px;
+        height: 30px;
+        display: block;
+    }
+
+    #adoption-journey-001 .aj-header-text .cs-topper {
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+    }
+
+    #adoption-journey-001 .aj-header-text .cs-title {
+        margin: 0.25rem 0 0.5rem 0;
+    }
+
+    #adoption-journey-001 .aj-header-text .cs-text {
+        margin: 0;
+    }
+
+    #adoption-journey-001 .aj-step-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        justify-items: center;
+    }
+
+    #adoption-journey-001 .aj-step {
+        background: #ffffff;
+        border-radius: 1.5rem;
+        padding: 1.4rem 1.4rem 1.5rem;
+        box-shadow: 0 10px 26px rgba(0, 0, 0, 0.06);
+    }
+
+    #adoption-journey-001 .aj-step-number {
+        width: 32px;
+        height: 32px;
+        border-radius: 999px;
+        background: #ffcfaa;
+        color: #222;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        font-size: 0.95rem;
+    }
+
+    #adoption-journey-001 .aj-step-title {
+        font-size: 1.05rem;
+        font-weight: 700;
+        margin: 0 0 0.3rem 0;
+    }
+
+    #adoption-journey-001 .aj-step-text {
+        margin: 0;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: #555;
+    }
+
+    /* Adoption Info & Fees */
+    #adoption-info-001 {
+        padding: 0 1.5rem 4.5rem;
+        background: #fffaf1;
+    }
+
+    #adoption-info-001 .cs-container {
+        max-width: 1120px;
+        margin: 0 auto;    
+    }
+
+    #adoption-info-001 .ai-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+    }
+
+    #adoption-info-001 .ai-card {
+        background: #ffffff;
+        border-radius: 1.5rem;
+        padding: 1.75rem 1.6rem 1.9rem;
+        box-shadow: 0 10px 26px rgba(0, 0, 0, 0.06);
+    }
+
+    #adoption-info-001 .ai-title {
+        font-size: 1.05rem;
+        font-weight: 700;
+        margin: 0 0 0.75rem 0;
+    }
+
+    #adoption-info-001 .ai-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 0.6rem;
+        font-size: 0.95rem;
+        color: #555;
+    }
+
+    #adoption-info-001 .ai-list li::before {
+        content: "•";
+        color: #ffcfaa;
+        font-weight: 700;
+        display: inline-block;
+        width: 0.9rem;
+        margin-left: -0.9rem;
+    }
+
+    #adoption-info-001 .ai-text {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: #555;
+        margin: 0 0 1rem 0;
+    }
+
+    #adoption-info-001 .ai-text.small {
+        font-size: 0.9rem;
+        color: #777;
+        margin-top: 0.5rem;
+    }
+
+    #adoption-info-001 .ai-fee-table {
+        display: grid;
+        gap: 0.6rem;
+        margin: 0.75rem 0 0.5rem 0;
+    }
+
+    #adoption-info-001 .ai-fee-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 0.95rem;
+    }
+
+    #adoption-info-001 .ai-fee-label {
+        color: #444;
+    }
+
+    #adoption-info-001 .ai-fee-value {
+        font-weight: 700;
+        color: #333;
+    }
+
+    #adoption-info-001 .ai-link {
+        display: inline-block;
+        margin-top: 0.75rem;
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: #e07a3f;
+        text-decoration: none;
+    }
+
+    #adoption-info-001 .ai-link:hover {
+        text-decoration: underline;
+    }
+    
+}
+@media only screen and (min-width: 48rem) {
+    #adoption-journey-001 .aj-step-list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    #adoption-info-001 .ai-grid {
+        grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+        align-items: flex-start;
+    }
+}
+
+#faq-350 {
+    padding: 4.5rem 1.5rem 5rem;
+    background: linear-gradient(180deg, #fffaf1 0%, #ffffff 40%, #fffaf1 100%);
+}
+
+#faq-350 .cs-container {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+#faq-350 .cs-left {
+    position: relative;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+#faq-350 .cs-picture {
+    display: block;
+}
+
+#faq-350 .cs-picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1.8rem;
+    object-fit: cover;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.14);
+}
+
+#faq-350 .cs-picture1 {
+    position: relative;
+    z-index: 1;
+}
+
+#faq-350 .cs-picture2 {
+    position: absolute;
+    width: 40%;
+    right: -6%;
+    bottom: 6%;
+    z-index: 2;
+}
+
+#faq-350 .cs-picture3 {
+    position: absolute;
+    width: 32%;
+    left: -6%;
+    top: 8%;
+    z-index: 3;
+}
+
+#faq-350 .cs-content {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+#faq-350 .cs-topper {
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #e07a3f;
+}
+
+#faq-350 .cs-title {
+    margin: 0.4rem 0 0.9rem 0;
+}
+
+#faq-350 .cs-faq-group {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.7rem;
+}
+
+#faq-350 .cs-faq-item {
+    background: #ffffff;
+    border-radius: 1.1rem;
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.08);
+    padding: 0;
+    overflow: hidden;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+#faq-350 .cs-faq-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.1);
+}
+
+#faq-350 .cs-button {
+    width: 100%;
+    padding: 0.95rem 1.25rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font: inherit;
+}
+
+#faq-350 .cs-button-text {
+    text-align: left;
+    font-size: 0.98rem;
+    font-weight: 600;
+    color: #222;
+}
+
+#faq-350 .cs-button::after {
+    content: "▾";
+    font-size: 0.85rem;
+    color: #999;
+    margin-left: 0.75rem;
+    transition: transform 0.2s ease;
+}
+
+#faq-350 .cs-faq-item.active .cs-button::after {
+    transform: rotate(-180deg);
+}
+
+#faq-350 .cs-item-p {
+    margin: 0;
+    padding: 0 1.25rem 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height 0.25s ease, opacity 0.2s ease;
+}
+
+#faq-350 .cs-faq-item.active .cs-item-p {
+    padding-bottom: 1rem;
+    max-height: 500px;
+    opacity: 1;
+    visibility: visible;
+}
+
+#faq-350 .ai-link {
+    display: inline-block;
+    margin-top: 1.2rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #e07a3f;
+    text-decoration: none;
+}
+
+#faq-350 .ai-link:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 64rem) {
+    #faq-350 .cs-container {
+        flex-direction: row;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    #faq-350 .cs-left,
+    #faq-350 .cs-content {
+        flex: 1 1 0;
+    }
+}
+
+
+#nav-shelter {
+  background: #FFF7EF;
+  width: 100%;
+  padding: 0.9rem 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  font-family: 'Nunito', sans-serif;
+}
+
+#nav-shelter .nav-container {
+  max-width: 1120px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav-shelter .nav-left {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+#nav-shelter .nav-logo {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+#nav-shelter .nav-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #3B2A1F;
+}
+
+#nav-shelter .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+#nav-shelter .nav-links a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #3B2A1F;
+  transition: color 0.2s ease;
+}
+
+#nav-shelter .nav-links a:hover {
+  color: #E07A3F;
+}
+
+#nav-shelter .nav-cta {
+  padding: 0.55rem 1.3rem;
+  border-radius: 999px;
+  background: #FFE2B8;
+  color: #3B2A1F;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+#nav-shelter .nav-cta:hover {
+  background: #FFC776;
+  transform: translateY(-1px);
+}
+
+#footer-shelter {
+  background: #FFF7EF;
+  text-align: center;
+  padding: 2.6rem 1rem 2.8rem;
+  font-family: 'Nunito', sans-serif;
+  color: #3B2A1F;
+  margin-top: 3rem;
+}
+
+#footer-shelter .footer-title {
+  font-weight: 800;
+  font-size: 1.35rem;
+  margin: 0 0 0.4rem;
+}
+
+#footer-shelter .footer-sub {
+  margin: 0 0 0.6rem;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+#footer-shelter .footer-info {
+  font-size: 0.9rem;
+  margin: 0.3rem 0 0.9rem;
+  line-height: 1.5;
+}
+
+#footer-shelter .footer-copy {
+  font-size: 0.82rem;
+  opacity: 0.7;
+}
