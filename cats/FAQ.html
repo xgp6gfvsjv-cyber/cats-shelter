@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cats Shelter – Adoption FAQ</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<!-- ============================================ -->
+<!--                     FAQ                      -->
+<!-- ============================================ -->
+    <section id="faq-350">
+        <div class="cs-container">
+            <div class="cs-left">
+                <picture class="cs-picture cs-picture1">
+                <img src="FAQ1.jpg" alt="cat FAQ big" width="672" height="672">
+                </picture>
+
+                <picture class="cs-picture cs-picture2">
+                <img src="FAQ2.jpg" alt="cat FAQ medium" width="300" height="300">
+                </picture>
+
+                <picture class="cs-picture cs-picture3">
+                <img src="FAQ3.jpg" alt="cat FAQ small" width="200" height="200">
+                </picture>
+            </div>
+            <div class="cs-content">
+                <span class="cs-topper">Adoption FAQ</span>
+                <h2 class="cs-title">Frequently Asked Questions</h2>
+                <ul class="cs-faq-group">
+                    <!-- Active item default -->
+                    <li class="cs-faq-item active">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What is your cat adoption process?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            First, browse our available cats online and submit an adoption enquiry. Our team will contact you to discuss your lifestyle and recommend suitable cats. You can then book a meet-and-greet at the shelter. If it’s a good match, we’ll finalise paperwork and organise a pick-up time.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Are the cats desexed, vaccinated and microchipped?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Yes. All cats are desexed, microchipped, flea- and worm-treated, and up to date with core vaccinations before going to their new home, unless clearly stated otherwise for medical reasons.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Can I adopt if I live in an apartment or rental?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Absolutely, many of our cats are well suited to apartment living. We do require written approval from your landlord or body corporate, and we recommend keeping cats indoors or in a safely enclosed balcony or catio.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Is there a trial period if things don&#39;t work out?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            We offer a short trial period where you can bring the cat home and see how they settle in. If there are serious issues, please contact us as soon as possible and we will work with you to support the cat or arrange a return.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What ongoing support do you provide after adoption?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Our team is available for post-adoption advice on behaviour, feeding, introductions to other pets and general cat care. We can also refer you to trusted vets and behaviourists if you need extra help.
+                        </p>
+                    </li>
+                </ul>
+                <a href="index.html" class="ai-link">Back to Home &rarr;</a>
+            </div>
+        </div>
+        </section>
+
+    <script>
+        // Simple accordion behaviour for FAQ items
+        document.addEventListener('DOMContentLoaded', function () {
+            const items = document.querySelectorAll('#faq-350 .cs-faq-item');
+
+            items.forEach(function (item) {
+                const button = item.querySelector('.cs-button');
+                button.addEventListener('click', function () {
+                    if (!item.classList.contains('active')) {
+                        items.forEach(function (other) {
+                            other.classList.remove('active');
+                        });
+                        item.classList.add('active');
+                    } else {
+                        item.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>    
+    
+    
+</body>
+</html>
